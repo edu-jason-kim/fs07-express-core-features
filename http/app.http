@@ -1,2 +1,5 @@
 GET http://localhost:3000/products
-Cookie: name=john
+
+###
+
+GET http://localhost:3000/users
