@@ -7,6 +7,11 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use("/users", (req, res, next) => {
+  console.log("사용자 정보 로깅 (users)");
+  next();
+});
+
 // 사용자 정보 조회
 app.get("/users/me", (req, res) => {
   console.log("사용자 정보 조회");
@@ -23,6 +28,12 @@ app.patch("/users/me", (req, res) => {
 app.get("/users/me/profile", (req, res) => {
   console.log("사용자 프로필 조회");
   res.json({ message: "사용자 프로필 조회" });
+});
+
+// 상품 목록 조회
+app.get("/products", (req, res) => {
+  console.log("상품 목록 조회");
+  res.json({ message: "상품 목록 조회" });
 });
 
 app.listen(3000, () => {

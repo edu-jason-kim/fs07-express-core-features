@@ -1,1 +1,1 @@
-GET http://localhost:3000/users/me/profile
+GET http://localhost:3000/products?order=price&query=바람막이
