@@ -1,6 +1,6 @@
 import express from "express";
 import always from "./middlewares/always.js";
-import productRouter from "./routes/product.js";
+import productRouter from "./routes/product.route.js";
 import userRouter from "./routes/user.js";
 
 const app = express();
