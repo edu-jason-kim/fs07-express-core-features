@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Upload attachment (multipart/form-data)</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 2rem;
+      }
+      label {
+        display: block;
+        margin-bottom: 1rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>POST /files (multipart/form-data)</h1>
+
+    <form
+      method="post"
+      action="http://localhost:3000/files"
+      enctype="multipart/form-data"
+    >
+      <label>
+        Choose file:
+        <input type="file" name="attachment" required />
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>

@@ -1,5 +1,11 @@
-GET http://localhost:3000/products
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{ "name": "바람막이" }
 
 ###
 
-GET http://localhost:3000/products/1
+POST http://localhost:3000/products
+Content-Type: multipart/form-data
+
+
